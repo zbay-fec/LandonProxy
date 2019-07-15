@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'proxy',
-    script: 'server.js'
+    script: './server.js'
   }],
   deploy: {
     production: {
