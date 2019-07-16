@@ -11,7 +11,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'https://github.com/zbay-fec/LandonProxy.git',
       path: '/home/ubuntu/landonProxy',
-      'post-deploy': 'npm install && npm run build && pm2 startOrRestart ./ecosystem.config.js'
+      'post-deploy': 'npm install && npx webpack --mode production && pm2 startOrRestart ./ecosystem.config.js'
     }
   }
 }
