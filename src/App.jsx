@@ -6,7 +6,7 @@ const App = () => (
   <Search />
   <Router>
     <div className='app'>
-      <Route exact path='/' components={{Carousel, ItemDetail}} />
+      <Route exact path='/' components={{carousel:Carousel, itemDetail:ItemDetail}} />
       <Route path='/cart' component={Cart} />
     </div>
     
