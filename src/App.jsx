@@ -8,7 +8,7 @@ const App = () => (
     <div className='app'>
       <Route exact path='/' component={ItemDetail} />
       <Route exact path='/' component={Carousel} />
-      <Route exact path='/' component={Cart} />
+      <Route path='/cart' component={Cart} />
     </div>
     
   </Router>
