@@ -15,22 +15,13 @@ export default class App extends React.Component {
   }
 
   render() {
-    if (this.state.showCart) {
-      return (
-        <div>
-          <Search />
-          <Cart />
-          <Carousel showCart={true} />
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <Search />
-          <ItemDetail />
-          <Carousel />
-        </div>
-      );
-    }
+    return (
+      <div>
+        <Search />
+        <Cart showCart={this.state.showCart} />
+        <ItemDetail showCart={this.state.showCart} />
+        <Carousel showCart={this.state.showCart} />
+      </div>
+    );
   }
 }
