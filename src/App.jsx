@@ -5,11 +5,13 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       showCart: false
-    }
+    };
   }
 
   componentDidMount() {
-    window.addEventListener('showCart', e => this.setState({ showCart: e.detail.showCart }))
+    window.addEventListener('showCart', e =>
+      this.setState({ showCart: e.detail.showCart })
+    );
   }
 
   render() {
@@ -17,9 +19,9 @@ export default class App extends React.Component {
       return (
         <div>
           <Search />
-          <Cart />  
+          <Cart />
         </div>
-      ); 
+      );
     } else {
       return (
         <div>
@@ -31,18 +33,3 @@ export default class App extends React.Component {
     }
   }
 }
-
-const App = () => (
-  <>
-    <Search />
-    <Router>
-      <div className="app">
-        <Route exact path="/" component={ItemDetail} />
-        <Route exact path="/" component={Carousel} />
-        <Route path="/cart" component={Cart} />
-      </div>
-    </Router>
-  </>
-);
-
-export default App;
