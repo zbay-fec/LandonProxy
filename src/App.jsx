@@ -20,6 +20,7 @@ export default class App extends React.Component {
         <div>
           <Search />
           <Cart />
+          <Carousel showCart={true} />
         </div>
       );
     } else {
