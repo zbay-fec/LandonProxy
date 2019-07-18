@@ -21,7 +21,7 @@ export default class App extends React.Component {
         <Cart showCart={this.state.showCart} />
         <ItemDetail showCart={this.state.showCart} />
         <Carousel showCart={this.state.showCart} />
-        {/* <ReviewsList showCart={this.state.showCart} /> */}
+        <ReviewsList showCart={this.state.showCart} />
       </div>
     );
   }
